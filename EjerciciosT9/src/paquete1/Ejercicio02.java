@@ -24,8 +24,10 @@ public class Ejercicio02 {
 
         for (int i = 0; i < respuestas.length; i++) {
             respuesta = respuestas[i]; // -1
-            if ((respuesta >= 1) && (respuesta <= 5)) {
+            if ((respuesta >= -1) && (respuesta <= 5)) {
                 valoresRangos[0] = valoresRangos[0] + 1;
+                /*se cambia el valor por el -1 para que funcionen 
+                desde el principio*/
             } else {
                 if ((respuesta >= 6) && (respuesta <= 10)) {
                     valoresRangos[1] = valoresRangos[1] + 1;
@@ -33,8 +35,10 @@ public class Ejercicio02 {
                     if ((respuesta >= 11) && (respuesta <= 15)) {
                         valoresRangos[2] = valoresRangos[2] + 1;
                     } else {
-                        if ((respuesta >= 16) && (respuesta <= 20)) {
+                        if ((respuesta >= 16) && (respuesta <= 200)) {
                             valoresRangos[3] = valoresRangos[3] + 1;
+                            /* se agrega el valor 200 para que abarque todos 
+                            los datos*/
                         }
 
                     }

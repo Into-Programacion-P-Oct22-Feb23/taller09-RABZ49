@@ -40,18 +40,19 @@ public class Ejercicio00 {
 
         for (int i = 0; i < promediosMateria1.length; i++) {
 
-            mensajeFinal = String.format("%sEstudiante:%s - promedio final: "
-                    + "%.4f\n",
-                    mensajeFinal,
-                    estudiantes[i],
+            mensajeFinal = String.format("%sEstudiante:%s, materia 1: %s "
+                    + "materia 2: %s. Promedio final: %.4f\n", mensajeFinal,
+                    estudiantes[i], promediosMateria1[i], promediosMateria2[i],
                     promediosFinales[i]);
         }
-
+        /* auemntamos variables para acumular y poder imprimir deacuerdo 
+        con el formato pedido.
+         */
         System.out.printf("%s\n", mensajeFinal);
         /*
         
         Estudiante:Luis, materia 1: 8.10, materia 2: 7.9. Promedio final: 8,0000
-        */
+         */
     }
 
 }
